@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0b0f19;
+    color: #f1f5f9;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom rounded futuristic scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff6b3d;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8a50;
+}
+
+/* Smooth glassmorphism panels with vibrant borders */
+.hud-card {
+  background: rgba(21, 30, 51, 0.85);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.hud-card:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.hud-mars-card {
+  background: rgba(26, 16, 23, 0.85);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 107, 61, 0.3);
+  box-shadow: 0 8px 30px rgba(255, 77, 40, 0.12);
+}
